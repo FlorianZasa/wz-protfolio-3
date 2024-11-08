@@ -4,14 +4,12 @@ import ProjectOverview from '../components/ProjectOverview';
 import { projects } from '../data/projectData';
 
 function Project({ project }) {
-    // Get all projects excluding the current project
     const restProjects = () => {
         return projects.filter(p => p.id !== project.id);
     };
 
     return (
         <>
-            {/* Content Section */}
             <section className='section-flex'>
                 <div
                     style={{

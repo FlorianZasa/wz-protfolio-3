@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
 import { ButtonStyle } from '../styles/button';
 import { projects } from '../data/projectData';
-import ProjectCard from '../components/ProjectCard';
 
 import './Home.css'
 import ProjectOverview from '../components/ProjectOverview';
