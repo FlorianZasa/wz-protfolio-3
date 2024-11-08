@@ -1,0 +1,39 @@
+{
+    "translation": {
+        "navigation": {
+            "PORTFOLIO": "Portfolio",
+            "ABOUT": "O mnie",
+            "SKILLS": "Umiejętności",
+            "CONTACT": "Kontakt"
+        },
+        "home": {
+            "HEADER_HI_THERE": "Cześć,",
+            "HEADER_I_AM": "Jestem",
+            "HEADER_Subtext_1": "Pasjonuję się",
+            "HEADER_Subtext_2": "projektowaniem UX/UI",
+            "HEADER_Subtext_3": ", tworząc angażujące i intuicyjne doświadczenia cyfrowe.",
+            "HEADER_CONTACT_ME": "Skontaktuj się ze mną",
+            "HEADER_DONWLOAD_MY_CV": "Pobierz moje CV"
+        },
+        "about_me": {
+            "HEADER_LINKEDIN": "LinkedIn"
+        },
+        "nopage": {
+            "Not_Exist": "Ta strona wydaje się (jeszcze) nie istnieć"
+        },
+        "about": {
+            "language": {
+                "ENGLISH": "Angielski",
+                "POLISH": "Polski",
+                "GERMAN": "Niemiecki",
+                "DUTCH": "Holenderski"
+            },
+            "level": {
+                "BEGINNER": "Początkujący",
+                "INTERMEDIATE": "Średniozaawansowany",
+                "FLUENT": "Biegły",
+                "NATIVE": "Ojczysty"
+            }
+        }
+    }
+}

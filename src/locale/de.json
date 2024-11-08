@@ -1,0 +1,39 @@
+{
+    "translation": {
+        "navigation": {
+            "PORTFOLIO": "Portfolio",
+            "ABOUT": "Über mich",
+            "SKILLS": "Fähigkeiten",
+            "CONTACT": "Kontakt"
+        },
+        "home": {
+            "HEADER_HI_THERE": "Hallo,",
+            "HEADER_I_AM": "Ich bin",
+            "HEADER_Subtext_1": "Ich bin leidenschaftliche",
+            "HEADER_Subtext_2": "UX/UI-Designerin",
+            "HEADER_Subtext_3": ", die ansprechende und intuitive digitale Erlebnisse schafft.",
+            "HEADER_CONTACT_ME": "Kontaktiere mich",
+            "HEADER_DONWLOAD_MY_CV": "Lebenslauf herunterladen"
+        },
+        "about_me": {
+            "HEADER_LINKEDIN": "LinkedIn"
+        },
+        "nopage": {
+            "Not_Exist": "Diese Seite scheint nicht (noch) zu existieren"
+        },
+        "about": {
+            "language": {
+                "ENGLISH": "Englisch",
+                "POLISH": "Polnisch",
+                "GERMAN": "Deutsch",
+                "DUTCH": "Niederländisch"
+            },
+            "level": {
+                "BEGINNER": "Anfänger",
+                "INTERMEDIATE": "Mittelstufe",
+                "FLUENT": "Fließend",
+                "NATIVE": "Muttersprache"
+            }
+        }
+    }
+}

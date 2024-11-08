@@ -1,0 +1,39 @@
+{
+    "translation": {
+        "navigation": {
+            "PORTFOLIO": "Portfolio",
+            "ABOUT": "Over mij",
+            "SKILLS": "Vaardigheden",
+            "CONTACT": "Contact"
+        },
+        "home": {
+            "HEADER_HI_THERE": "Hallo,",
+            "HEADER_I_AM": "Ik ben",
+            "HEADER_Subtext_1": "Ik ben en gepassioneerd",
+            "HEADER_Subtext_2": "UX/UI-ontwerper",
+            "HEADER_Subtext_3": ", het creëren van boeiende en intuïtieve digitale ervaringen.",
+            "HEADER_CONTACT_ME": "Neem contact met me op",
+            "HEADER_DONWLOAD_MY_CV": "Download mijn CV"
+        },
+        "about_me": {
+            "HEADER_LINKEDIN": "LinkedIn"
+        },
+        "nopage": {
+            "Not_Exist": "Deze pagina lijkt (nog) niet te bestaan"
+        },
+        "about": {
+            "language": {
+                "ENGLISH": "Engels",
+                "POLISH": "Pools",
+                "GERMAN": "Duits",
+                "DUTCH": "Nederlands"
+            },
+            "level": {
+                "BEGINNER": "Beginner",
+                "INTERMEDIATE": "Gemiddeld",
+                "FLUENT": "Vloeiend",
+                "NATIVE": "Moedertaal"
+            }
+        }
+    }
+}

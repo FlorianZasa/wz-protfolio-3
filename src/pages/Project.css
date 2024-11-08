@@ -1,0 +1,15 @@
+.project-content {
+    position: relative;
+    z-index: 1; /* Makes sure this content is in front of the banner */
+    padding: 2rem;
+    background-color: #fff; /* Optional: to make the content stand out against the banner */
+  }
+
+  
+@media screen and (max-width: 900px) {
+.banner-image {
+    height: 15rem; /* Adjust height for smaller screens */
+    object-fit: cover;
+}
+}
+  

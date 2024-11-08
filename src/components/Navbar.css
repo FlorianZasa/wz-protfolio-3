@@ -1,0 +1,32 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-top: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+    color: inherit;
+
+    transition: 0.3s ease;
+}
+  
+.nav-link.active-link {
+    font-weight: bold;
+    color: var(--primary);
+    border-bottom: solid 2px var(--primary);
+}
+
+.nav-link:hover{
+  color: var(--primary);
+  border-bottom: solid 2px var(--primary);
+}
+  
+@media screen and (max-width: 900px) {
+  .nav-container {
+    display: none;
+  }
+}

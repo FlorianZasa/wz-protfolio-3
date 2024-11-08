@@ -1,0 +1,14 @@
+.about-languages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 900px) {
+    .about-languages {
+        justify-content: center;
+        gap: 2rem;
+    }
+}
