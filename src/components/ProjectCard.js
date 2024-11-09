@@ -7,7 +7,7 @@ function ProjectCard({ project}) {
   return (
     <div className="project-card-container">
         <div className='project-card' style={{backgroundColor: project.color}}>
-            <img src={project.img} alt="project" width={project.imgSize[0]} height={project.imgSize[1]} id="project-img" />
+            <img src={project.logo} alt="project" width={project.imgSize[0]} height={project.imgSize[1]} id="project-img" />
         </div>
         
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'start', gap: '0.5rem'}}>

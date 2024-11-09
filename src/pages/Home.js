@@ -7,6 +7,7 @@ import { projects } from '../data/projectData';
 
 import './Home.css'
 import ProjectOverview from '../components/ProjectOverview';
+import ContactMeButton from '../components/ContactMeButton';
 
 function Home() {
     const { t } = useTranslation();
@@ -46,7 +47,7 @@ function Home() {
           </div>
 
           <div style={{ display: 'flex', gap: '2rem', marginTop: '4rem' }}>
-            <Button variant={ButtonStyle.PRIMARY} text={t('home.HEADER_CONTACT_ME')} icon={"/contact_me/envelope.png"}></Button>
+            <ContactMeButton />
             <Button variant={ButtonStyle.SECONDARY} text={t('home.HEADER_DONWLOAD_MY_CV')}></Button>
           </div>
         </div>
@@ -56,7 +57,7 @@ function Home() {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-          <div style={{ width: '100%', overflow: 'hidden' }}>
+          <div style={{ width: '100%', overflow: 'clip' }}>
             <img 
               src='/Images/main_1.png' 
               alt='me' 
@@ -66,7 +67,7 @@ function Home() {
         </div>
       </section>
 
-      <section style={{marginLeft: '2.5rem', marginRight: '2.5rem'}}>
+      <section style={{marginLeft: '2.5rem', marginRight: '2.5rem'}} className="jump-animated">
         <div style={{ display: 'flex', gap: '10.5625rem' }}>
           {/* Left Side - Grid Container */}
           <div style={{ 
@@ -112,7 +113,7 @@ function Home() {
       </section>
 
 
-      <section style={{textAlign: 'center', alignItems: 'center'}}>
+      <section style={{textAlign: 'center', alignItems: 'center'}} className="jump-animated">
         <h2>My Projects</h2>
         <div style={{ display: 'flex', gap: '2.475rem', marginTop: '2rem' }}>
           <button onClick={() => filter("")} className={`text project-filter ${selectedFilter === "" ? "active" : ""}`}>All</button>

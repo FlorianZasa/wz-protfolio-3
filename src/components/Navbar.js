@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import { useTranslation } from 'react-i18next';
 //import LanguageSwitcher from './LanguageSwitcher';
-import Button from './Button';
+
+import ContactMeButton from './ContactMeButton';
 
 function Navbar() {
   const { t } = useTranslation();
@@ -64,12 +65,7 @@ function Navbar() {
             </NavLink>
           </div>
           <div style={{ display: 'flex', gap: '2rem' }}>
-            <NavLink 
-              to="/contact" 
-              className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
-            >
-              <Button text={t('home.HEADER_CONTACT_ME')} icon={"/contact_me/envelope.png"} />
-            </NavLink>
+            <ContactMeButton />
           </div>
         </div>
       ) : (
@@ -110,7 +106,8 @@ function Navbar() {
                   to="/contact" 
                   className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
                 >
-                  <Button text={t('home.HEADER_CONTACT_ME')} />
+                  <ContactMeButton />
+
                 </NavLink>
               </div>
             </div>

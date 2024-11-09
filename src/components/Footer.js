@@ -1,15 +1,11 @@
 import React from 'react';
 import { colors } from '../styles/colors';
-import Button from './Button';
-import { ButtonStyle } from '../styles/button';
-import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
 import './Navbar.css'
+import ContactMeButton from './ContactMeButton';
 
 function Footer() {
-  const { t } = useTranslation();
-
   return (
     <footer style={{
       display: 'flex',
@@ -27,12 +23,7 @@ function Footer() {
         <h6>👋 Get in touch at</h6>
         <h2>contact@wiktoriazemla.com</h2>
       </div>
-      <Button 
-        variant={ButtonStyle.PRIMARY} 
-        text={t("home.HEADER_CONTACT_ME")}
-        icon={"/contact_me/envelope.png"}
-        style={{ width: 'fit-content'}}
-      />
+      <ContactMeButton />
     </div>
     <div style={{display: 'flex', borderTop: `solid 2px ${colors.primary}`, 
       paddingTop: '3rem',paddingBottom: '2rem', justifyContent: 'space-between'

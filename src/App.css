@@ -10,7 +10,7 @@
   padding-right: 11.25rem;
   text-align: 'center';
   position: relative;
-  overflow: hidden;
+  overflow: clip;
 }
 
 
@@ -95,4 +95,57 @@ section {
 
 section:first-of-type {
   padding-top: 4.5rem;
+}
+
+.jump-animated {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .jump-animated {
+      animation: jump-up-animation 2s cubic-bezier(0.25, 0.1, 0.25, 1.4) forwards,
+                 jump-out-animation 2s cubic-bezier(0.25, 0.1, 0.25, 1.4) forwards;
+      animation-timeline: view();
+      animation-range: entry 20% cover 50%, exit 50% exit 80%;
+    } 
+  }
+}
+
+@keyframes jump-up-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(400);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(-10px);
+  }
+  80% {
+    opacity: 0.9;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes jump-out-animation {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 0.9;
+    transform: translateY(-10px);
+  }
+  40% {
+    opacity: 0.7;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
 }

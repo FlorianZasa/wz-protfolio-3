@@ -22,7 +22,7 @@ function Project({ project }) {
                         marginBottom: '8.75rem'
                     }}
                 >
-                    <div style={{ gap: '0.75rem' }}>
+                    <div style={{ display:'flex', flexDirection: 'column', gap: '0.75rem' }}>
                         <h5 style={{ color: colors.primary }}>{project.tags.join(' / ')}</h5>
                         <h1>{project.title}</h1>
                     </div>
@@ -39,7 +39,7 @@ function Project({ project }) {
                 }}
             >
                 <img
-                    src="/media_jungle/banner.png"
+                    src={project.img}
                     alt="Project Banner"
                     style={{
                         width: '100%',
@@ -92,8 +92,8 @@ function Project({ project }) {
                 }}
             >
                 <img
-                    src={project.img}
-                    alt="Project"
+                    src={project.banner2}
+                    alt="Projectbanner2"
                     style={{
                         height: '673px',
                         objectFit: 'cover'
