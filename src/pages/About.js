@@ -24,7 +24,7 @@ function About() {
             <Button variant={ButtonStyle.SECONDARY} text={t('about_me.HEADER_LINKEDIN')}></Button>
           </div>
         </div>
-        <img src='aboutme.png' alt='me' width='357'/>
+        <img src='./aboutme.png' alt='me' width='357'/>
       </div>
 
 

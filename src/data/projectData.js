@@ -1,9 +1,9 @@
 export const projects = [
     {
         id: 1,
-        logo: "/projects/media_jungle/media_jungle.png",
-        img: "/projects/media_jungle/banner.png",
-        banner2: "/projects/media_jungle/banner2.png",
+        logo: "./projects/media_jungle/media_jungle.png",
+        img: "./projects/media_jungle/banner.png",
+        banner2: "./projects/media_jungle/banner2.png",
         title: "Mediajungle",
         subtitle: "Internship project",
         shortDescription: "During my study I made an internship where I worked on the redesign of the Mediajungle website.",
@@ -18,9 +18,9 @@ export const projects = [
     },
     {
         id: 2,
-        logo: "/projects/mark/mark.png",
-        img: "/projects/mark/banner.png",
-        banner2: "/projects/mark/banner2.png",
+        logo: "./projects/mark/mark.png",
+        img: "./projects/mark/banner.png",
+        banner2: "./projects/mark/banner2.png",
         title: "MARK",
         subtitle: "Concept",
         shortDescription: "MARK is a conceptual web-design project focused on creating a modern platform for paid online surveys.",
@@ -35,8 +35,8 @@ export const projects = [
     },
     {
         id: 3,
-        logo: "/projects/quizzy/quizzy.png",
-        img: "/projects/quizzy.png",
+        logo: "./projects/quizzy/quizzy.png",
+        img: "./projects/quizzy.png",
         title: "Quizzy",
         subtitle: "",
         tags: ["Website Design", "Graphic Design"],

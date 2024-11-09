@@ -72,15 +72,15 @@ function Home() {
           {/* Left Side - Grid Container */}
           <div style={{ 
             display: 'grid', 
-            gridTemplateColumns: 'auto 1fr',  // The first column (icons) will take auto width, and the second column (titles) will take remaining space
+            gridTemplateColumns: 'auto 1fr',
             gap: '3rem', 
-            maxWidth: '18.9375rem'  // Max width for the grid container
+            maxWidth: '18.9375rem'
           }}>
             {/* Icons Column */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3rem' }}>
-              <img src='/what_do_i_do/web_design.png' alt="web-design" width={84} height={75} />
-              <img src='/what_do_i_do/app_design.png' alt="app-design" width={40} height={75} />
-              <img src='/what_do_i_do/graphic_design.png' alt="graphic-design" width={88} height={75} />
+              <img src='./what_do_i_do/web_design.png' alt="web-design" width={84} height={75} />
+              <img src='./what_do_i_do/app_design.png' alt="app-design" width={40} height={75} />
+              <img src='./what_do_i_do/graphic_design.png' alt="graphic-design" width={88} height={75} />
             </div>
 
             {/* Titles Column */}

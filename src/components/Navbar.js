@@ -37,7 +37,7 @@ function Navbar() {
     <div>
       {isNavVisible ? (
         <div className='nav-container'>
-          <img src="/Images/Logo.png" alt="logo" style={{paddingRight: '7.5rem'}} width={56} height={46} />
+          <img src="./Images/Logo.png" alt="logo" style={{paddingRight: '7.5rem'}} width={56} height={46} />
           <div style={{display: 'flex', gap: '2.375rem', flex: 1}}>
             <NavLink 
               to="/" 
@@ -70,7 +70,7 @@ function Navbar() {
         </div>
       ) : (
         <div style={{display: 'flex', justifyContent: 'space-between', padding: '0.5rem'}}>
-          <img src="/logo.png" alt="logo" height="80" />
+          <img src="./logo.png" alt="logo" height="80" />
 
           <button onClick={toggleNav} style={{ marginLeft: 'auto' }}>
             {isNavToggled ? 'x' : 'o'}
