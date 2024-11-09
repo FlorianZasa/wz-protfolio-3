@@ -2,8 +2,17 @@ import React from 'react';
 import { colors } from '../styles/colors';
 import ProjectOverview from '../components/ProjectOverview';
 import { projects } from '../data/projectData';
+import { useParams } from 'react-router-dom';
 
-function Project({ project }) {
+function Project() {
+    const { id } = useParams();
+    const project = projects.find(p => p.id === parseInt(id));
+  
+    if (!project) {
+      return <div>Project not found</div>;
+    }
+  
+
     const restProjects = () => {
         return projects.filter(p => p.id !== project.id);
     };

@@ -49,8 +49,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
-            <Route path="/project/0" element={<Project project={projects[0]} />} />
-            <Route path="/project/1" element={<Project project={projects[1]} />} />
+            <Route path="/project/:id" element={<Project />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </div>
