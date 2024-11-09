@@ -96,7 +96,7 @@ section {
 section:first-of-type {
   padding-top: 4.5rem;
 }
-
+/* 
 .jump-animated {
   opacity: 0;
 }
@@ -148,4 +148,4 @@ section:first-of-type {
     opacity: 0;
     transform: translateY(-400px);
   }
-}
+} */
