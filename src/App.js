@@ -1,5 +1,6 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import './i18n.js';
 
 import Home from './pages/Home';
@@ -39,7 +40,7 @@ function App() {
   }, []); // Empty dependency array ensures this only runs once
 
   return (
-    <BrowserRouter>
+    <Router basename="/wz-protfolio-3">
       <div className='container' ref={refScrollUp}>
         <Navbar />
         <TopUpButton showTopUp={showTopUp} scrollUp={handleScrollUp} />
@@ -55,7 +56,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 

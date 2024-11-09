@@ -89,8 +89,7 @@ function Project({ project }) {
                     marginRight: '-11.25rem',
                     backgroundColor: project.color,
                     marginTop: '13.75rem'
-                }}
-            >
+                }}>
                 <img
                     src={project.banner2}
                     alt="Projectbanner2"
