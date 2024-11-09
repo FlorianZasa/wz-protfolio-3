@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "WZ Portfolio",
+  "name": "Wiktoria Zemla Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +18,13 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/wiktoria-zemla-portfolio/",
+  "scope": "/wiktoria-zemla-portfolio/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#D8F1F6",
+  "background_color": "#ffffff",
+  "description": "Portfolio showcasing the web and graphic design projects of Wiktoria Zemla",
+  "lang": "en-US",
+  "categories": ["design", "portfolio", "web development"],
+  "orientation": "any"
 }
