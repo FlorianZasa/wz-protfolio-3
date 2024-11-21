@@ -46,13 +46,7 @@ function Footer() {
           to="/about" 
           className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
         >
-          About Me
-        </NavLink>
-        <NavLink 
-          to="/skills" 
-          className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
-        >
-          Skill
+          About me
         </NavLink>
       </div>
 

@@ -37,7 +37,7 @@ function Navbar() {
     <div>
       {isNavVisible ? (
         <div className='nav-container'>
-          <img src="./Images/Logo.png" alt="logo" style={{paddingRight: '7.5rem'}} width={56} height={46} />
+          <img src={`${process.env.PUBLIC_URL}/Images/Logo.png`} alt="logo" style={{paddingRight: '7.5rem'}} width={56} height={46} />
           <div style={{display: 'flex', gap: '2.375rem', flex: 1}}>
             <NavLink 
               to="/" 
@@ -56,12 +56,6 @@ function Navbar() {
               className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
             >
               {t('navigation.ABOUT')}
-            </NavLink>
-            <NavLink 
-              to="/skills" 
-              className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
-            >
-              {t('navigation.SKILLS')}
             </NavLink>
           </div>
           <div style={{ display: 'flex', gap: '2rem' }}>

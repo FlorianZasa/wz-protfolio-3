@@ -23,7 +23,7 @@
 .timeline-date.right::after {
     content: "";
     position: absolute;
-    right: -20px; /* Abstand nach außen für größere Länge */
+    right: -20px;
     top: 50%;
     transform: translateY(-50%);
     border: 12px solid transparent; /* Größeren Zipfel durch größere Border */

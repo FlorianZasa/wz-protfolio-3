@@ -6,25 +6,59 @@
 }
 
 .nav-link {
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 18px;
-    color: inherit;
-
-    transition: 0.3s ease;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 18px;
+  color: inherit;
+  position: relative; /* To position the pseudo-element relative to the link */
+  padding-bottom: 10px; /* Create space for the circle */
+  transition: color 0.3s ease;
 }
-  
+
+/* Active link styling */
 .nav-link.active-link {
-    font-weight: bold;
-    color: var(--primary);
-    border-bottom: solid 2px var(--primary);
+  font-weight: bold;
+  color: var(--primary); /* Text color for active state */
 }
 
-.nav-link:hover{
-  color: var(--primary);
-  border-bottom: solid 2px var(--primary);
+.nav-link.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Position at the bottom of the link */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for exact centering */
+  width: 0.25rem; /* Diameter of the circle */
+  height: 0.25rem; /* Diameter of the circle */
+  border-radius: 50%; /* Make it round */
+  background-color: var(--primary); /* Color of the circle */
+  opacity: 1; /* Always visible when active */
+  transition: opacity 0.3s ease; /* Smooth transition */
 }
-  
+
+/* Hover effect to show the circle */
+.nav-link:hover {
+  color: var(--primary); /* Change text color */
+}
+
+.nav-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 50%;
+  background-color: var(--primary); /* Color of the circle */
+  opacity: 1; /* Circle is visible on hover */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Ensure circle doesn't overlap other elements */
+.nav-link::after {
+  opacity: 0; /* Initially invisible */
+}
+
 @media screen and (max-width: 900px) {
   .nav-container {
     display: none;

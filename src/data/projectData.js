@@ -1,9 +1,12 @@
+const PUBLIC_URL = process.env.PUBLIC_URL || '';
+
+
 export const projects = [
     {
         id: 1,
-        logo: "./projects/media_jungle/media_jungle.png",
-        img: "./projects/media_jungle/banner.png",
-        banner2: "./projects/media_jungle/banner2.png",
+        logo: `${PUBLIC_URL}/projects/media_jungle/media_jungle.png`,
+        img: `${PUBLIC_URL}/projects/media_jungle/banner.png`,
+        banner2: `${PUBLIC_URL}/projects/media_jungle/banner2.png`,
         title: "Mediajungle",
         subtitle: "Internship project",
         shortDescription: "During my study I made an internship where I worked on the redesign of the Mediajungle website.",
@@ -18,9 +21,9 @@ export const projects = [
     },
     {
         id: 2,
-        logo: "./projects/mark/mark.png",
-        img: "./projects/mark/banner.png",
-        banner2: "./projects/mark/banner2.png",
+        logo: `${PUBLIC_URL}/projects/mark/mark.png`,
+        img: `${PUBLIC_URL}/projects/mark/banner.png`,
+        banner2: `${PUBLIC_URL}/projects/mark/banner2.png`,
         title: "MARK",
         subtitle: "Concept",
         shortDescription: "MARK is a conceptual web-design project focused on creating a modern platform for paid online surveys.",
@@ -35,13 +38,19 @@ export const projects = [
     },
     {
         id: 3,
-        logo: "./projects/quizzy/quizzy.png",
-        img: "./projects/quizzy.png",
+        logo: `${PUBLIC_URL}/projects/quizzy/quizzy.png`,
+        img: `${PUBLIC_URL}/projects/quizzy/banner.png`,
+        banner2: `${PUBLIC_URL}/projects/quizzy/banner2.png`,
         title: "Quizzy",
         subtitle: "",
+        shortDescription: "Quizzy is an interactive platform created to enhance communication and teamwork among students through game-based learning.",
+        introduction: "For my thesis project as part of my study, I chose to focus on addressing the challenges faced by students in the Internationale Schakelklas (ISK), which translates to International Transition Class. This is a type of school in the Netherlands designed to help students who do not yet speak Dutch, particularly young refugees, integrate into the Dutch educational system. Drawing from my personal experience as a former ISK student, I understood firsthand how difficult it can be to feel included in a group when language is a barrier. This led me to develop a tool aimed at improving communication, group dynamics, and the use of the Dutch language within these classes. Through my research and design, I sought to create a solution that fosters teamwork and inclusivity, helping students overcome language challenges while building social connections.",
+        designProcess: "To tackle this issue, I began by researching different group dynamics and communication challenges in multicultural classrooms. I analyzed how students currently interact, focusing on how language barriers and cultural differences affected teamwork. This research informed the creation of 'Quizzy', a gamified learning tool designed to engage students in team-building activities while encouraging students to communicate in Dutch.\n\nThe design process involved developing an interactive platform that integrates quizzes and game cards. The quizzes encourage students to work together in Dutch, while the game cards introduce playful challenges to enhance communication. Gamification elements like points, rewards, and role-playing were included to motivate students to participate actively. I worked closely with teachers and UX experts to refine the design, ensuring it was both fun and educational. Regular feedback from ISK educators helped me iterate on the design, making sure it addressed the needs of both students and teachers. Additionally, I conducted usability testing to ensure that the platform was intuitive and accessible for the teachers who use the platform during the game.\n\nAn important part of Quizzy’s design is the role of the teacher, or Quizzymaster, who moderates the game. The Quizzymaster ensures that students work together, supporting their progression through different stages of team-building while maintaining a balanced and inclusive classroom dynamic.",
+        problemOverview: "Many ISK students experience difficulties beyond the classroom, trauma from fleeing conflict, cultural adjustments, and language barriers. These challenges often result in feelings of alienation, with students forming groups based on shared languages and backgrounds, which limits interaction across the class. This division, especially the lack of Dutch practice, hinders both their social integration and academic progress.\n\nIn classrooms, students often avoid speaking Dutch, preferring to communicate in their native languages, which leads to exclusion of others, bullying, and weakened group dynamics. This makes it difficult for ISK students to feel connected and supported, impacting their well-being and learning experience.",
+        result: "By incorporating teambuilding activities and gamified learning experiences, Quizzy helps students break out of their language-based friend groups, reduces conflicts, and creates a more unified and supportive classroom environment. It helps bridge the gap between students who may otherwise struggle to connect due to language barriers, encouraging them to communicate in Dutch and develop stronger social bonds.\n\nBy engaging students in group discussions and collaborative problem-solving, Quizzy helps students improve their Dutch language skills in a fun, non-intimidating way. The game includes two sets of cards, support cards and action cards. Support cards (Search, Wisdom, and Joker) provide versatile tools that aid in team strategy and communication. Action cards (Block, Target, and Shield) focus on direct interactions between teams, influencing the competitive dynamics of the game. These cards are designed with clear visual distinctions to ensure ease of use and understanding.",
         tags: ["Website Design", "Graphic Design"],
         color: "#D9D8F6",
         imgSize: [280, 252],
-        webUrl: `/project/${2}`
+        webUrl: `/project/${3}`
     },
 ]

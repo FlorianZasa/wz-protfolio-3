@@ -10,7 +10,7 @@ function ContactMeButton() {
     }
 
     return (
-      <Button text={t('home.HEADER_CONTACT_ME')} icon={"./contact_me/envelope.png"} onClick={contactMe} />        
+      <Button text={t('home.HEADER_CONTACT_ME')} icon={`${process.env.PUBLIC_URL}/contact_me/envelope.png`} onClick={contactMe} />        
     );
 }
 

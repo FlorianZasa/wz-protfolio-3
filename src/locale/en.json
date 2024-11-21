@@ -2,7 +2,7 @@
     "translation": {
         "navigation": {
             "PORTFOLIO": "Portfolio",
-            "ABOUT": "About Me",
+            "ABOUT": "About me",
             "SKILLS": "Skills",
             "CONTACT": "Contact"
         },
@@ -13,10 +13,10 @@
             "HEADER_Subtext_2": "UX/UI Designer",
             "HEADER_Subtext_3": ", who crafts engaging and intuitive digital experiences.",
             "HEADER_CONTACT_ME": "Contact me",
-            "HEADER_DONWLOAD_MY_CV": "Download My CV"
+            "HEADER_DONWLOAD_MY_CV": "Download my CV"
         },
         "about_me": {
-            "HEADER_LINKEDIN": "LinkedIn"
+            "HEADER_LINKEDIN": "LinkedIn profile"
         },
         "nopage": {
             "Not_Exist": "This page does not seem to exist (yet)"

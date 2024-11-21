@@ -4,7 +4,7 @@ import './TopUpButton.css'
 function TopUpButton({showTopUp, scrollUp}) {
   return (
     <button className={showTopUp} onClick={scrollUp}>
-      <img src='./arrow_up.png' alt='arrow' height={20} />
+      <img src={`${process.env.PUBLIC_URL}/arrow_up.png`} alt='arrow' height={20} />
     </button>
   )
 }

@@ -1,18 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { colors } from '../styles/colors';
 import ProjectOverview from '../components/ProjectOverview';
 import { projects } from '../data/projectData';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 function Project() {
     const { id } = useParams();
     const project = projects.find(p => p.id === parseInt(id));
-  
+    const navigate = useNavigate()
+    
+    useEffect(() => {
+        if (!project) {
+            navigate(process.env.REACT_APP_PUBLIC_URL || "/");
+        } else {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    }, [id, project, navigate]);
+
     if (!project) {
-      return <div>Project not found</div>;
+        return null;
     }
   
-
     const restProjects = () => {
         return projects.filter(p => p.id !== project.id);
     };
@@ -66,7 +77,7 @@ function Project() {
             <section style={{ gap: '2rem', paddingLeft: '3.75rem', paddingRight: '3.75rem' }}>
                 <h2>Problem overview</h2>
                 <span className='text'>
-                    {project.problemOverview.split('\n').map((line, index) => (
+                    {project.problemOverview?.split('\n').map((line, index) => (
                         <React.Fragment key={index}>
                             {line}
                             <br />

@@ -1,4 +1,4 @@
-  import React, { useState } from 'react';
+  import React, { useEffect, useState } from 'react';
   import { colors } from '../styles/colors';
   import { useTranslation } from 'react-i18next';
   import Button from '../components/Button';
@@ -13,6 +13,13 @@
       const { t } = useTranslation();
 
       const [selectedFilter, setSelectedFilter] = useState("");
+
+      useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
 
       const filter = (filterTag) => {
         setSelectedFilter(filterTag);
@@ -59,7 +66,7 @@
           }}>
             <div style={{ width: '100%', overflow: 'clip' }}>
               <img 
-                src='./Images/main_1.png' 
+                src={`${process.env.PUBLIC_URL}/Images/main_1.png`}
                 alt='me' 
                 style={{ maxWidth: '29.8125rem', width: '100%', height: 'auto', objectFit: 'cover' }} 
               />
@@ -78,9 +85,10 @@
             }}>
               {/* Icons Column */}
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3rem' }}>
-                <img src='./what_do_i_do/web_design.png' alt="web-design" width={84} height={75} />
-                <img src='./what_do_i_do/app_design.png' alt="app-design" width={40} height={75} />
-                <img src='./what_do_i_do/graphic_design.png' alt="graphic-design" width={88} height={75} />
+              
+                <img src={`${process.env.PUBLIC_URL}/what_do_i_do/web_design.png`} alt="web-design" width={84} height={75} />
+                <img src={`${process.env.PUBLIC_URL}/what_do_i_do/app_design.png`} alt="app-design" width={40} height={75} />
+                <img src={`${process.env.PUBLIC_URL}/what_do_i_do/graphic_design.png`} alt="graphic-design" width={88} height={75} />
               </div>
 
               {/* Titles Column */}
@@ -105,9 +113,9 @@
               flex: 1  // Allow this section to expand and take available space
             }}>
               <h2>What do <span style={{ color: colors.primary }}>I</span> do?</h2>
-              <span className="text">
+              <p className="text">
                 As a UX/UI designer, I craft intuitive and visually compelling digital experiences. Whether it's designing user-friendly websites, engaging mobile apps, or standout graphics, my focus is always on blending functionality with aesthetics to create designs that both look great and feel seamless to use.
-              </span>
+              </p>
             </div>
           </div>
         </section>

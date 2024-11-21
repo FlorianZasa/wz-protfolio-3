@@ -12,7 +12,7 @@ function ProjectCard({ project }) {
       
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'start', gap: '0.5rem'}}>
         <h5 style={{color: colors.primary}}>{project.tags.join(' / ')}</h5>
-        <h4>{project.title} {project.subtitle && " - " + project.subtitle}</h4>
+        <h4>{project.title}</h4>
       </div>
     </Link>
   )
