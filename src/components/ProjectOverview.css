@@ -1,0 +1,13 @@
+.my-project-container {
+    display: flex;
+    gap: 2.475rem;
+    margin-top: 3rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    .my-project-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

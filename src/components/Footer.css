@@ -1,0 +1,84 @@
+.footer-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+    margin-top: 15rem;
+}
+
+.footer-navigation {
+    display: flex;
+    border-top: solid 2px var(--colors-primary);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+}
+
+.footer-navigation-item {
+    display: flex; 
+    gap: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .footer-footer {
+        margin-top: 7.5rem;
+    }
+
+    .footer-footer h2 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+      }
+      
+    .footer-footer div {
+        max-width: 100%;
+    }
+
+    .left {
+        align-items: left;
+    }
+
+    .right {
+        align-items: end;
+    }
+
+    .footer-navigation-item {
+        flex-direction: column;
+    }
+}
+
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-top: 1rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+    color: inherit;
+    position: relative; /* To position the pseudo-element relative to the link */
+    padding-bottom: 10px; /* Create space for the circle */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link.active-link {
+    font-weight: bold;
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 0.5625rem;
+  }
+  
+
+  .nav-link:hover {
+    color: var(--primary);
+  }
+  
+  /* Ensure circle doesn't overlap other elements */
+  .nav-link::after {
+    opacity: 0; /* Initially invisible */
+  }

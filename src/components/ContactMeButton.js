@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 import { useTranslation } from 'react-i18next';
 
-function ContactMeButton() {
+function ContactMeButton({style}) {
     const { t } = useTranslation();
 
     const contactMe = () => {
@@ -10,7 +10,7 @@ function ContactMeButton() {
     }
 
     return (
-      <Button text={t('home.HEADER_CONTACT_ME')} icon={`${process.env.PUBLIC_URL}/contact_me/envelope.png`} onClick={contactMe} />        
+      <Button style={style} text={t('home.HEADER_CONTACT_ME')} icon={`${process.env.PUBLIC_URL}/contact_me/envelope.png`} onClick={contactMe} />        
     );
 }
 

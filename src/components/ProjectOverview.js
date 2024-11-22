@@ -1,9 +1,11 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 
+import './ProjectOverview.css'
+
 function ProjectOverview({projects}) {
   return (
-    <div style={{ display: 'flex', gap: '2.475rem', marginTop: '3rem' }}>
+    <div className="my-project-container">
         {projects.length > 0 && (
           projects.map((project) => (
             <a href={project.webUrl} style={{border: 'none', dextDecoration: 'none'}}>

@@ -1,3 +1,39 @@
+.fullscreen-nav {
+  position: fixed;
+  display: flex;
+  gap: 3rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s;
+}
+
+.fullscreen-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.fullscreen-nav .close-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -5,42 +41,30 @@
   padding-top: 1rem;
 }
 
-.nav-link {
+.navbar-link {
   text-decoration: none;
   font-weight: normal;
   font-size: 18px;
   color: inherit;
-  position: relative; /* To position the pseudo-element relative to the link */
-  padding-bottom: 10px; /* Create space for the circle */
+  position: relative;
+  padding-bottom: 10px;
   transition: color 0.3s ease;
 }
 
-/* Active link styling */
-.nav-link.active-link {
+.navbar-link.active-link {
   font-weight: bold;
-  color: var(--primary); /* Text color for active state */
+  color: var(--primary);
+
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+  text-underline-offset: 0.5625rem;
 }
 
-.nav-link.active-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0; /* Position at the bottom of the link */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for exact centering */
-  width: 0.25rem; /* Diameter of the circle */
-  height: 0.25rem; /* Diameter of the circle */
-  border-radius: 50%; /* Make it round */
-  background-color: var(--primary); /* Color of the circle */
-  opacity: 1; /* Always visible when active */
-  transition: opacity 0.3s ease; /* Smooth transition */
+.navbar-link:hover {
+  color: var(--primary);
 }
 
-/* Hover effect to show the circle */
-.nav-link:hover {
-  color: var(--primary); /* Change text color */
-}
-
-.nav-link:hover::after {
+.navbar-link:hover::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -55,12 +79,18 @@
 }
 
 /* Ensure circle doesn't overlap other elements */
-.nav-link::after {
+.navbar-link::after {
   opacity: 0; /* Initially invisible */
 }
 
 @media screen and (max-width: 900px) {
   .nav-container {
     display: none;
+  }
+
+  .navbar-link.active-link {
+    font-weight: bold;
+    color: white;
+    font-weight: bold;
   }
 }

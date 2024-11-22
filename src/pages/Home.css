@@ -1,15 +1,114 @@
-/* Neutral styling for all project filter buttons */
+
 .project-filter {
     box-shadow: none;
     background-color: inherit;
     cursor: pointer;
     border: none;
+
+    border: 1px #A0A0A0 solid;
+    color: #A0A0A0;
+    padding: 0.625rem;
+    transition: all 0.5s;
   }
   
-  /* Active button styling */
   .active {
     color: var(--primary);
-    padding-bottom: 0.1rem;
-    border-bottom: 2px solid var(--primary);
+    border: 1.5px var(--primary) solid;
+    margin-bottom: 0.1rem;
     font-weight: 700;
   }
+
+  .header-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    min-width: 467px;
+    max-width: 100%;
+  }  
+
+  .buttonbox {
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+
+  .what-do-i-do-section {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .what-do-i-do-container {
+    display: flex;
+     gap: 10.5625rem;
+  }
+
+  .what-do-i-do-icons {
+    display: flex;
+    gap: 3rem;
+    max-width: 18.9375rem;
+  }
+
+  .do-icon-text {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .my-project-section {
+    text-align: center;
+    align-items: center;
+  }
+
+  .project-filters {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .project-filter {
+    border-radius: 9999px;
+    padding: 0.625rem;
+  }
+
+@media screen and (max-width: 900px) {
+
+  .header-content {
+    min-width: 0;
+    max-width: none;
+  }
+
+
+  .buttonbox {
+    flex-direction: column;
+    margin-bottom: 4rem;
+    gap: 1rem;
+  }
+
+  .what-do-i-do-section {
+    margin: 0;
+  }
+
+  .what-do-i-do-container {
+    flex-direction: column-reverse;
+    gap: 5.25rem;
+    align-items: center;
+  }
+
+  .what-do-i-do-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .do-icon-text {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .project-filters {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+}

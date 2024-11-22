@@ -37,73 +37,88 @@ function Navbar() {
     <div>
       {isNavVisible ? (
         <div className='nav-container'>
-          <img src={`${process.env.PUBLIC_URL}/Images/Logo.png`} alt="logo" style={{paddingRight: '7.5rem'}} width={56} height={46} />
+          <img src={`${process.env.PUBLIC_URL}/Images/Logo.png`} alt="logo" style={{paddingRight: '7.5rem', zIndex: 1010}} width={56} height={46} />
           <div style={{display: 'flex', gap: '2.375rem', flex: 1}}>
-            <NavLink 
-              to="/" 
-              className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
-            >
-              Home
-            </NavLink>
-            <NavLink 
-              to="/portfolio" 
-              className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
-            >
-              {t('navigation.PORTFOLIO')}
-            </NavLink>
-            <NavLink 
-              to="/about" 
-              className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
-            >
-              {t('navigation.ABOUT')}
-            </NavLink>
+          <NavLink 
+            to="/" 
+            className={({ isActive }) => isActive ? 'navbar-link active-navbar-link' : 'navbar-link'}
+          >
+            Home
+          </NavLink>
+          <NavLink 
+            to="/portfolio" 
+            className={({ isActive }) => isActive ? 'navbar-link active-navbar-link' : 'navbar-link'}
+          >
+            {t('navigation.PORTFOLIO')}
+          </NavLink>
+          <NavLink 
+            to="/about" 
+            className={({ isActive }) => isActive ? 'navbar-link active-navbar-link' : 'navbar-link'}
+          >
+            {t('navigation.ABOUT')}
+          </NavLink>
           </div>
           <div style={{ display: 'flex', gap: '2rem' }}>
             <ContactMeButton />
           </div>
         </div>
       ) : (
-        <div style={{display: 'flex', justifyContent: 'space-between', padding: '0.5rem'}}>
-          <img src="./logo.png" alt="logo" height="80" />
+        <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '1rem'}}>
+          <img src={`${process.env.PUBLIC_URL}/Images/Logo.png`} alt="logo" height="26" />
 
-          <button onClick={toggleNav} style={{ marginLeft: 'auto' }}>
-            {isNavToggled ? 'x' : 'o'}
-          </button>
-          {isNavToggled && (
-            <div className='nav-container'>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <NavLink 
-                  to="/" 
-                  className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
-                >
-                  Home
-                </NavLink>
-                <NavLink 
-                  to="/portfolio" 
-                  className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
-                >
-                  {t('navigation.PORTFOLIO')}
-                </NavLink>
-                <NavLink 
-                  to="/about" 
-                  className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
-                >
-                  {t('navigation.ABOUT')}
-                </NavLink>
-                <NavLink 
-                  to="/skills" 
-                  className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
-                >
-                  {t('navigation.SKILLS')}
-                </NavLink>
-                <NavLink 
-                  to="/contact" 
-                  className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
-                >
-                  <ContactMeButton />
-
-                </NavLink>
-              </div>
+          <div style={{display: 'flex', flexDirection: 'row', gap: '1.125rem'}}>
+            <button onClick={toggleNav} style={{ marginLeft: 'auto', border: 'none', background: 'inherit', height: '1.25rem' }}>         
+                <img src={`${process.env.PUBLIC_URL}/contact_me/enveloper_red.png` } width='23'/>
+            </button>
+            <button onClick={toggleNav} style={{ marginLeft: 'auto', border: 'none', background: 'inherit', height: '1.25rem' }}>
+              {isNavToggled ? ("x")
+              : 
+              (
+                <img src={`${process.env.PUBLIC_URL}/Images/burger-menu.png` } width='26'/>
+              )
+              }
+            </button>
+          </div>
+          { isNavToggled && (
+            <div className="fullscreen-nav">
+              <button className="close-button" onClick={toggleNav}>×</button>
+              <img src={`${process.env.PUBLIC_URL}/Images/logo_white.png`} alt="logo" width={56} height={46} />
+              <NavLink 
+                to="/" 
+                className={({ isActive }) => (isActive ? 'navbar-link active-link' : 'navbar-link')}
+                onClick={toggleNav}
+              >
+                Home
+              </NavLink>
+              <NavLink 
+                to="/portfolio" 
+                className={({ isActive }) => (isActive ? 'navbar-link active-link' : 'navbar-link')}
+                onClick={toggleNav}
+              >
+                {t('navigation.PORTFOLIO')}
+              </NavLink>
+              <NavLink 
+                to="/about" 
+                className={({ isActive }) => (isActive ? 'navbar-link active-link' : 'navbar-link')}
+                onClick={toggleNav}
+              >
+                {t('navigation.ABOUT')}
+              </NavLink>
+              <NavLink 
+                to="/skills" 
+                className={({ isActive }) => (isActive ? 'navbar-link active-link' : 'navbar-link')}
+                onClick={toggleNav}
+              >
+                {t('navigation.SKILLS')}
+              </NavLink>
+              <NavLink 
+                to="/contact" 
+                className={({ isActive }) => (isActive ? 'navbar-link active-link' : 'navbar-link')}
+                onClick={toggleNav}
+              >
+                {t('navigation.CONTACT')}
+              </NavLink>
+              <ContactMeButton style={{ border: '2px solid white'}} />
             </div>
           )}
         </div>

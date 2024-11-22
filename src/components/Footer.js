@@ -1,19 +1,12 @@
 import React from 'react';
-import { colors } from '../styles/colors';
 import { NavLink } from 'react-router-dom';
 
-import './Navbar.css'
+import './Footer.css'
 import ContactMeButton from './ContactMeButton';
 
 function Footer() {
   return (
-    <footer style={{
-      display: 'flex',
-      flexDirection: 'column',
-      gap: '2rem',
-      textAlign: 'left',
-      marginTop: '15rem'
-  }}>
+    <footer className="footer-footer">
     <div style={{display: 'flex', flexDirection: 'column', gap: '2rem'}}>
       <div style={{
         display: 'flex',
@@ -25,11 +18,9 @@ function Footer() {
       </div>
       <ContactMeButton />
     </div>
-    <div style={{display: 'flex', borderTop: `solid 2px ${colors.primary}`, 
-      paddingTop: '3rem',paddingBottom: '2rem', justifyContent: 'space-between'
-    }}>
+    <div className="footer-navigation">
       {/* Navigation Links */}
-      <div style={{display: 'flex', gap: '2.375rem'}}>
+      <div className="footer-navigation-item left">
         <NavLink 
           to="/" 
           className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
@@ -51,7 +42,7 @@ function Footer() {
       </div>
 
       {/* Social Media Links */}
-      <div style={{display: 'flex', gap: '2rem'}}>
+      <div className="footer-navigation-item right">
         <NavLink 
           to="https://www.instagram.com/wiktoria_designwork/" 
           className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}
