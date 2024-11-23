@@ -37,7 +37,6 @@ function Navbar() {
     <div>
       {isNavVisible ? (
         <div className='nav-container'>
-          <img src={`${process.env.PUBLIC_URL}/Images/Logo.png`} alt="logo" style={{paddingRight: '7.5rem', zIndex: 1010}} width={56} height={46} />
           <div style={{display: 'flex', gap: '2.375rem', flex: 1}}>
           <NavLink 
             to="/" 
@@ -71,8 +70,7 @@ function Navbar() {
                 <img src={`${process.env.PUBLIC_URL}/contact_me/enveloper_red.png` } />
             </button>
             <button onClick={toggleNav} style={{ border: 'none', background: 'inherit', padding: 0, margin: 0 }}>
-              {isNavToggled ? ("x")
-              : 
+              {! isNavToggled &&
               (
                 <img src={`${process.env.PUBLIC_URL}/Images/burger-menu.png` } width='26'/>
               )
@@ -82,7 +80,7 @@ function Navbar() {
           { isNavToggled && (
             <div className="fullscreen-nav">
               <button className="close-button" onClick={toggleNav}>×</button>
-              <img src={`${process.env.PUBLIC_URL}/Images/logo_white.png`} alt="logo" width={56} height={46} />
+              <img  className="logo" src={`${process.env.PUBLIC_URL}/Images/logo_white.png`} alt="logo" width={32} height={26} />
               <NavLink 
                 to="/" 
                 className={({ isActive }) => (isActive ? 'navbar-link active-link' : 'navbar-link')}
@@ -103,20 +101,6 @@ function Navbar() {
                 onClick={toggleNav}
               >
                 {t('navigation.ABOUT')}
-              </NavLink>
-              <NavLink 
-                to="/skills" 
-                className={({ isActive }) => (isActive ? 'navbar-link active-link' : 'navbar-link')}
-                onClick={toggleNav}
-              >
-                {t('navigation.SKILLS')}
-              </NavLink>
-              <NavLink 
-                to="/contact" 
-                className={({ isActive }) => (isActive ? 'navbar-link active-link' : 'navbar-link')}
-                onClick={toggleNav}
-              >
-                {t('navigation.CONTACT')}
               </NavLink>
               <ContactMeButton style={{ border: '2px solid white'}} />
             </div>
