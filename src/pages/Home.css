@@ -9,6 +9,12 @@
     color: #A0A0A0;
     padding: 0.625rem;
     transition: all 0.5s;
+    border-radius: 9999px;
+    max-height: 2.437rem;
+    min-width: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .active {
@@ -66,10 +72,6 @@
     margin-top: 2rem;
   }
 
-  .project-filter {
-    border-radius: 9999px;
-    padding: 0.625rem;
-  }
 
 @media screen and (max-width: 900px) {
 

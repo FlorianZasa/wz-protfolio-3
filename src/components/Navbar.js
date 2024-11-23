@@ -67,10 +67,10 @@ function Navbar() {
           <img src={`${process.env.PUBLIC_URL}/Images/Logo.png`} alt="logo" height="26" />
 
           <div style={{display: 'flex', flexDirection: 'row', gap: '1.125rem'}}>
-            <button onClick={toggleNav} style={{ marginLeft: 'auto', border: 'none', background: 'inherit', height: '1.25rem' }}>         
-                <img src={`${process.env.PUBLIC_URL}/contact_me/enveloper_red.png` } width='23'/>
+            <button onClick={toggleNav} style={{ border: 'none', background: 'inherit', padding: 0, margin: 0}}>         
+                <img src={`${process.env.PUBLIC_URL}/contact_me/enveloper_red.png` } />
             </button>
-            <button onClick={toggleNav} style={{ marginLeft: 'auto', border: 'none', background: 'inherit', height: '1.25rem' }}>
+            <button onClick={toggleNav} style={{ border: 'none', background: 'inherit', padding: 0, margin: 0 }}>
               {isNavToggled ? ("x")
               : 
               (

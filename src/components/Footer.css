@@ -8,8 +8,6 @@
 
 .footer-navigation {
     display: flex;
-    border-top: solid 2px var(--colors-primary);
-    padding-top: 3rem;
     padding-bottom: 2rem;
     justify-content: space-between;
 }
@@ -17,6 +15,13 @@
 .footer-navigation-item {
     display: flex; 
     gap: 2rem;
+}
+
+.footer-devider {
+  width: 100%;
+  height: 0.125rem;
+  background-color: var(--primary);
+  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 900px) {

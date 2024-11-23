@@ -18,6 +18,7 @@ function Footer() {
       </div>
       <ContactMeButton />
     </div>
+    <div className="footer-devider"></div>
     <div className="footer-navigation">
       {/* Navigation Links */}
       <div className="footer-navigation-item left">
@@ -41,7 +42,6 @@ function Footer() {
         </NavLink>
       </div>
 
-      {/* Social Media Links */}
       <div className="footer-navigation-item right">
         <NavLink 
           to="https://www.instagram.com/wiktoria_designwork/" 
