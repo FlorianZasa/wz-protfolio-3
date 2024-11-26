@@ -1,6 +1,69 @@
+.about-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+#about-3-section {
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+
+.about-3 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+
+
+.about-3-inner {
+    display: flex;
+    flex-direction: column;
+    min-width: 467px;
+    background-color: white;
+    padding-top: 7.75rem;
+    padding-right: 95px;
+    gap:  10.25rem;
+}
+
+#about-3-left-border {
+    position: absolute;
+    top: 0;
+    left: -11.25rem;
+    background-color: var(--primary);
+    width: 85px;
+    z-index: 1;
+    height: 100%;
+}
+
+#about-3-right-border {
+    position: absolute;
+    top: 0;
+    right: -11.25rem;
+    background-color: var(--primary);
+    width: 85px;
+    z-index: 1;
+    height: 100%;
+}
+
+#about-3-jackie-img {
+    height: auto;
+    position: relative;
+    top: 42px;
+    box-shadow: -42px -42px 0px var(--primary);
+}
+
 .about-languages {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -9,15 +72,54 @@
     position: relative;
   }
 
-.freetime-b {
-    height: 329px;
-    background-color: black;
-    z-index: 9;
-    border-radius: 12px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 76%, 86% 100%, 0% 100%);
-  }
-
 @media screen and (max-width: 900px) {
+    .about-1 {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .about-1 img {
+        width: 100%;
+    }
+
+    #about-3-section {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .about-3 {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .about-3 img {
+        width: 80%;
+        top: 0;
+    }
+
+    .about-3-inner {
+        min-width: 0;
+        padding: 0;
+        gap: 4rem;
+    }
+
+    #about-3-left-border {
+        position: static;
+        width: 100%;
+        height: 2rem;
+    }
+
+    #about-3-right-border {
+        position: static;
+        width: 100%;
+        height: 2rem;
+    }
+
+    #about-3-jackie-img {
+        top: 0;
+    }
+
     .about-languages {
         justify-content: center;
         gap: 2rem;

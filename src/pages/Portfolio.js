@@ -5,7 +5,9 @@ import { projects } from '../data/projectData';
 
 function Portfolio() {
   return (
-    <ProjectOverview projects={projects} />
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <ProjectOverview projects={projects} />
+    </div>
   )
 }
 

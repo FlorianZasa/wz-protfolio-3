@@ -29,6 +29,7 @@
       const filteredProjects = projects.filter((project) => 
         selectedFilter === "" || project.tags.includes(selectedFilter)
       );
+      
 
     return (
       <>
@@ -58,10 +59,10 @@
             alignItems: 'center',
           }}>
             <div style={{ width: '100%', overflow: 'clip' }}>
-              <img 
+              <img
+                id="home-main-img"
                 src={`${process.env.PUBLIC_URL}/Images/main_1.png`}
                 alt='me' 
-                style={{ maxWidth: '29.8125rem', width: '100%', height: 'auto', objectFit: 'cover' }} 
               />
             </div>
           </div>

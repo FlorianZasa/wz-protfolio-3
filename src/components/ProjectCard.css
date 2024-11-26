@@ -6,7 +6,8 @@
 }
 
 .project-card {
-    width: 21.5rem;
+    min-width: 18.5rem;
+    max-width: 21.5rem;
     height: 21.875rem;
     border-radius: 12px;
     display: flex;
@@ -21,4 +22,10 @@
 
 .project-card:hover img {
     transform: scale(1.05);
-  }
+}
+
+@media screen and (max-width: 900px) {
+    .project-card img {
+      transform: scale(0.85);
+    }
+}

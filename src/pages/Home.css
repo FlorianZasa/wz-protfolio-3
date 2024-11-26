@@ -8,7 +8,6 @@
     border: 1px #A0A0A0 solid;
     color: #A0A0A0;
     padding: 0.625rem;
-    transition: all 0.5s;
     border-radius: 9999px;
     max-height: 2.437rem;
     min-width: 3.125rem;
@@ -33,6 +32,13 @@
     min-width: 467px;
     max-width: 100%;
   }  
+
+  #home-main-img {
+    max-width: 29.8125rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
   .buttonbox {
     display: flex;
@@ -80,6 +86,9 @@
     max-width: none;
   }
 
+  #home-main-img {
+    width: 100%;
+  }
 
   .buttonbox {
     flex-direction: column;
@@ -88,7 +97,8 @@
   }
 
   .what-do-i-do-section {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .what-do-i-do-container {

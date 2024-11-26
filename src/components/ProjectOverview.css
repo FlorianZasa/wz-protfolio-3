@@ -1,7 +1,8 @@
 .my-project-container {
     display: flex;
-    gap: 2.475rem;
+    gap: 1rem;
     margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
 

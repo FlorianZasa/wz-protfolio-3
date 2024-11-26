@@ -3,16 +3,22 @@
   color: "#000000";
   text-align: center;
 }
-
-
 .container {
   margin-left: 11.25rem;
   margin-right: 11.25rem;
   text-align: 'center';
   position: relative;
-  overflow: clip;
+}
+section {
+  margin-top: 13.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
+section:first-of-type {
+  margin-top: 4rem;
+}
 
 a {
   text-decoration: none;
@@ -92,18 +98,16 @@ p {
   h3 {
     font-size: 1.5rem;
   }
-}
-
-
-section {
-  padding-top: 13.75rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-section:first-of-type {
-  padding-top: 4rem;
+  section {
+    margin-top: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  section:first-of-type {
+    margin-top: 4rem;
+  }
 }
 /* 
 .jump-animated {
